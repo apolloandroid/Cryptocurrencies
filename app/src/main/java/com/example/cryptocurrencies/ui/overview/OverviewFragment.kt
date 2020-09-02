@@ -1,4 +1,4 @@
-package com.example.cryptocurrencies.overview
+package com.example.cryptocurrencies.ui.overview
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

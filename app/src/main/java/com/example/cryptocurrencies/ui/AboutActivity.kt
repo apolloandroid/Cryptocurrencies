@@ -1,9 +1,10 @@
-package com.example.cryptocurrencies
+package com.example.cryptocurrencies.ui
 
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.cryptocurrencies.R
 import kotlinx.android.synthetic.main.activity_about.*
 
 class AboutActivity : AppCompatActivity() {
