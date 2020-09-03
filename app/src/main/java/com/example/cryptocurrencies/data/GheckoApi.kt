@@ -3,7 +3,7 @@ package com.example.cryptocurrencies.data
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
-import java.util.*
+import io.reactivex.Observable
 
 interface GeckoApi {
     @GET("coins/markets")
@@ -19,5 +19,5 @@ interface GeckoApi {
         @Path ("id") id:String,
         @Query("vsCurrency") vsCurrency:String = "use",
         @Query("days") days:String = "market_cap_desc"
-    ) : Obser
+    ) : Observable<GeckoApi>
 }
