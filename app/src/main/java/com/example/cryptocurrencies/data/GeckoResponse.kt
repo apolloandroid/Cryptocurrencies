@@ -19,5 +19,5 @@ data class GeckoCoin(
 )
 
 data class GeckoCoinChart(
-    var prives: List<List<Float>>
+    var prices: List<List<Float>>
 )
