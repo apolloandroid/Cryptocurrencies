@@ -12,12 +12,12 @@ interface GeckoApi {
         @Query("per_page") perPage: Int = 100,
         @Query("sparkline") sparkLine: Boolean = false,
         @Query("order") order: String = "market_cap_desc",
-    ): Observable <List<GeckoCoin>>
+    ): Observable<List<GeckoCoin>>
 
-
+    @GET("coins/{id}/market_chart")
     fun getCoinMarketChart(
-        @Path ("id") id:String,
-        @Query("vsCurrency") vsCurrency:String = "use",
-        @Query("days") days:String = "market_cap_desc"
-    ) : Observable<GeckoApi>
+        @Path("id") id: String,
+        @Query("vsCurrency") vsCurrency: String = "usd",
+        @Query("days") days: String = "max"
+    ): Observable<GeckoCoinChart>
 }
