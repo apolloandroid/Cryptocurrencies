@@ -36,6 +36,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
     // Lifecycle
     implementation "androidx.lifecycle:lifecycle-extensions:2.0.0"
 
@@ -47,23 +48,27 @@ dependencies {
     implementation "android.arch.navigation:navigation-fragment-ktx:$navigationVersion"
     implementation "android.arch.navigation:navigation-ui-ktx:$navigationVersion"
 
-//    Dagger
+    // Dagger
     api 'com.google.dagger:dagger:2.24'
     kapt 'com.google.dagger:dagger-compiler:2.24'
     api 'com.google.dagger:dagger-android:2.16'
     api 'com.google.dagger:dagger-android-support:2.16'
     kapt 'com.google.dagger:dagger-android-processor:2.16'
 
-    //    Retrofit
+    // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
     implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$version_retrofit_coroutines_adapter"
 
-    //OkHttp
+    // OkHttp
     implementation 'com.squareup.okhttp3:okhttp:4.0.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.0.0'
 
-    //Gson
+    // Gson
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
     implementation 'com.google.code.gson:gson:2.8.5'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 }
