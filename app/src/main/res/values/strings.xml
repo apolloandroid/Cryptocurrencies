@@ -3,4 +3,12 @@
     <string name="the_index_is_calculated" translatable="false">The rating TOP-100 cryptocurrencies by market capitalization.\nPowered by CoinGecko API</string>
     <string name="rate_this_app_button_text">Rate This App</string>
     <string name="about_menu_item">About</string>
+
+    <!--    Currencies list item properties-->
+    <string name="currencies_list_sym_text">BAT</string>
+    <string name="currencies_list_item_name">Basic Attention Token</string>
+    <string name="currencies_list_item_market_cap">$ 278839000</string>
+    <string name="currencies_list_item_price">14.4545</string>
+    <string name="currencies_list_item_market_cap_rank">Market Cap</string>
+    <string name="currencies_list_item_price_text">Price $</string>
 </resources>
