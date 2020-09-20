@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.example.cryptocurrencies.R
-import com.example.cryptocurrencies.data.Currency
+import com.example.cryptocurrencies.data.Cryptocurrency
 import kotlinx.android.synthetic.main.cryptocurremcies_list_item.view.*
 
 class CurrenciesAdapter : BaseAdapter<CurrenciesAdapter.CurrencyViewHolder>() {
@@ -25,7 +25,7 @@ class CurrenciesAdapter : BaseAdapter<CurrenciesAdapter.CurrencyViewHolder>() {
 
         override fun bind(item: Any?) {
             let {
-                item as Currency
+                item as Cryptocurrency
                 Glide.with(view.context).load(item.image).into(view.image_cryptocurrency_icon)
                 view.apply {
                     text_cryptocurrency_sym.text = item.symbol

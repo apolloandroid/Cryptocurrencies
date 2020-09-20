@@ -1,6 +1,6 @@
 package com.example.cryptocurrencies.data
 
-data class Currency(
+data class Cryptocurrency(
     val id: String,
     val symbol: String,
     val name: String,

@@ -1,6 +1,5 @@
 package com.example.cryptocurrencies.mvp.contract
 
-import android.telephony.euicc.DownloadableSubscription
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 

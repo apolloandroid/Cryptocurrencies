@@ -41,5 +41,4 @@ class RestModule {
     @Singleton
     fun provideGeckoApiService(@Named("GECKO_API") retrofit: Retrofit) =
         retrofit.create(GeckoApi::class.java)
-
 }
