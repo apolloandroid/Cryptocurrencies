@@ -20,5 +20,4 @@ class CryptocurrenciesFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_cryptocurrencies, container, false)
     }
-
 }
