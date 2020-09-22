@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_cryptocurrencies.*
 
 
-abstract class BaseListFragment : Fragment() {
+abstract class BaseCryptocurrenciesFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     protected lateinit var viewAdapter: com.example.cryptocurrencies.ui.adapters.BaseAdapter<*>

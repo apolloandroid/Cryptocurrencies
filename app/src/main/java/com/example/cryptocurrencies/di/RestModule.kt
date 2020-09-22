@@ -39,6 +39,6 @@ class RestModule {
 
     @Provides
     @Singleton
-    fun provideGeckoApiService(@Named("GECKO_API") retrofit: Retrofit) =
+    fun provideGeckoApiService(retrofit: Retrofit) =
         retrofit.create(GeckoApi::class.java)
 }

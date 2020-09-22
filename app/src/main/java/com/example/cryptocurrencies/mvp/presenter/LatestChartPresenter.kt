@@ -11,7 +11,7 @@ import javax.inject.Inject
 class LatestChartPresenter : LatestChartContract.Presenter() {
 
     @Inject
-    private lateinit var geckoApi: GeckoApi
+     lateinit var geckoApi: GeckoApi
 
     init {
         App.appComponent.inject(this)
