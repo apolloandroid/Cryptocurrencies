@@ -2,18 +2,16 @@ package com.example.cryptocurrencies.ui.cryptocurrencies
 
 import android.os.Bundle
 import android.view.View
-import android.widget.BaseAdapter
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.cryptocurremcies_list_item.*
 import kotlinx.android.synthetic.main.fragment_cryptocurrencies.*
-import com.example.cryptocurrencies.ui.adapters
+
 
 abstract class BaseListFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
-    protected lateinit var viewAdapter: BaseAdapter<*>
+    protected lateinit var viewAdapter: com.example.cryptocurrencies.ui.adapters.BaseAdapter<*>
     private lateinit var viewManager: RecyclerView.LayoutManager
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -28,5 +26,5 @@ abstract class BaseListFragment : Fragment() {
         }
     }
 
-    abstract fun createAdapterInstance(): BaseAdapter<*>
+    abstract fun createAdapterInstance(): com.example.cryptocurrencies.ui.adapters.BaseAdapter<*>
 }
