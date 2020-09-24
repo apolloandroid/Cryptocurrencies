@@ -8,7 +8,7 @@ import io.reactivex.Observable
 interface GeckoApi {
     @GET("coins/markets")
     fun getCryptoCurrenciesList(
-        @Query("vsCurrency") vs: String = "usd",
+        @Query("vs_currency") vs: String = "usd",
         @Query("per_page") perPage: Int = 100,
         @Query("sparkline") sparkLine: Boolean = false,
         @Query("order") order: String = "market_cap_desc",
@@ -17,7 +17,7 @@ interface GeckoApi {
     @GET("coins/{id}/market_chart")
     fun getCoinMarketChart(
         @Path("id") id: String,
-        @Query("vsCurrency") vsCurrency: String = "usd",
+        @Query("vs_currency") vsCurrency: String = "usd",
         @Query("days") days: String = "max"
     ): Observable<GeckoCoinChart>
 }
